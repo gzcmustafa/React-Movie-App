@@ -1,5 +1,4 @@
 import React from "react";
-import SearchBar from "./SearchBar";
 import MovieList from "./MovieList";
 
 class App extends React.Component {
@@ -40,10 +39,11 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <SearchBar />
+
           </div>
         </div>
-        <MovieList />
+        <MovieList
+          movies={this.state.movies} />
       </div>
     );
   }
