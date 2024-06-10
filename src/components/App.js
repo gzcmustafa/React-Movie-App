@@ -15,24 +15,31 @@ class App extends React.Component {
       },
       {
         id: 2,
-        name: "The Flash",
+        name: "Suits",
         rating: 8.9,
         overview:
           "This is a wider card with supporting text below as a natural lead-in to additional content",
         imageURL:
-          "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yZevl2vHQgmosfwUdVNzviIfaWS.jpg",
+          "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
       },
       {
         id: 3,
-        name: "Arrow",
+        name: "The Dark Knight",
         rating: 8.9,
         overview:
           "This is a wider card with supporting text below as a natural lead-in to additional content",
         imageURL:
-          "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg",
+          "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
       },
     ],
   };
+
+  deleteMovie = (movie) => {
+    const newMovieList = this.state.movies.filter(m => m.id !== movie.id)
+    this.setState({
+      movies: newMovieList
+    })
+  }
 
   render() {
     return (
@@ -43,7 +50,8 @@ class App extends React.Component {
           </div>
         </div>
         <MovieList
-          movies={this.state.movies} />
+          movies={this.state.movies}
+          deleteMovieProp={this.deleteMovie} />
       </div>
     );
   }
