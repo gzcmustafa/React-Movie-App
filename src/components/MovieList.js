@@ -23,7 +23,7 @@ const MovieList = (props) => {
                                         className="btn btn-md btn-outline-danger"
                                         onClick={(event) => props.deleteMovieProp(movie)}
                                     >Delete</button>
-                                    <h2><span className="badge text-bg-warning">9.0</span></h2>
+                                    <h2><span className="badge text-bg-warning">{movie.rating}</span></h2>
 
                                 </div>
                             </div>

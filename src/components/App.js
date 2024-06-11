@@ -1,5 +1,6 @@
 import React from "react";
 import MovieList from "./MovieList";
+import SearchBar from "./SearchBar"
 
 class App extends React.Component {
   state = {
@@ -7,7 +8,7 @@ class App extends React.Component {
       {
         id: 1,
         name: "Interstellar",
-        rating: 8.9,
+        rating: 7.9,
         overview:
           "This is a wider card with supporting text below as a natural lead-in to additional content",
         imageURL:
@@ -16,7 +17,7 @@ class App extends React.Component {
       {
         id: 2,
         name: "Suits",
-        rating: 8.9,
+        rating: 8.4,
         overview:
           "This is a wider card with supporting text below as a natural lead-in to additional content",
         imageURL:
@@ -25,7 +26,7 @@ class App extends React.Component {
       {
         id: 3,
         name: "The Dark Knight",
-        rating: 8.9,
+        rating: 7.2,
         overview:
           "This is a wider card with supporting text below as a natural lead-in to additional content",
         imageURL:
@@ -36,9 +37,13 @@ class App extends React.Component {
 
   deleteMovie = (movie) => {
     const newMovieList = this.state.movies.filter(m => m.id !== movie.id)
-    this.setState({
-      movies: newMovieList
-    })
+
+    // this.setState({
+    //   movies: newMovieList
+    // })
+
+    this.setState(state => ({ movies: newMovieList }))
+
   }
 
   render() {
@@ -46,7 +51,7 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-
+            <SearchBar />
           </div>
         </div>
         <MovieList
