@@ -4,60 +4,17 @@ import SearchBar from "./SearchBar"
 
 class App extends React.Component {
   state = {
-    movies: [
-      {
-        id: 1,
-        name: "Interstellar",
-        rating: 7.9,
-        overview:
-          "This is a wider card with supporting text below as a natural lead-in to additional content",
-        imageURL:
-          "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-      },
-      {
-        id: 2,
-        name: "Suits",
-        rating: 8.4,
-        overview:
-          "This is a wider card with supporting text below as a natural lead-in to additional content",
-        imageURL:
-          "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
-      },
-      {
-        id: 3,
-        name: "The Dark Knight",
-        rating: 7.2,
-        overview:
-          "This is a wider card with supporting text below as a natural lead-in to additional content",
-        imageURL:
-          "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-      },
-      {
-        id: 4,
-        name: "Rogue",
-        rating: 7.4,
-        overview: "This is a wider card with supporting text below as a natural lead-in to additional content.",
-        imageURL: "https://image.tmdb.org/t/p/w220_and_h330_face/uOw5JD8IlD546feZ6oxbIjvN66P.jpg"
-      },
-
-      {
-        id: 5,
-        name: "Project Power",
-        rating: 6.7,
-        overview: "This is a wider card with supporting text below as a natural lead-in to additional content.",
-        imageURL: "https://image.tmdb.org/t/p/w220_and_h330_face/TnOeov4w0sTtV2gqICqIxVi74V.jpg"
-      },
-
-      {
-        id: 6,
-        name: "Superman",
-        rating: 7.6,
-        overview: "This is a wider card with supporting text below as a natural lead-in to additional content.",
-        imageURL: "https://image.tmdb.org/t/p/w220_and_h330_face/6Bbq8qQWpoApLZYWFFAuZ1r2gFw.jpg"
-      }
-    ],
+    movies: [],
     searchQuery: ""
   };
+
+  async componentDidMount() {
+    const baseURL = "http://localhost:3002/movies";
+    const response = await fetch(baseURL);
+    const data = await response.json();
+    this.setState({ movies: data })
+
+  }
 
   deleteMovie = (movie) => {
     const newMovieList = this.state.movies.filter(m => m.id !== movie.id)
