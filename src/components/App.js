@@ -32,30 +32,60 @@ class App extends React.Component {
         imageURL:
           "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
       },
+      {
+        id: 4,
+        name: "Rogue",
+        rating: 7.4,
+        overview: "This is a wider card with supporting text below as a natural lead-in to additional content.",
+        imageURL: "https://image.tmdb.org/t/p/w220_and_h330_face/uOw5JD8IlD546feZ6oxbIjvN66P.jpg"
+      },
+
+      {
+        id: 5,
+        name: "Project Power",
+        rating: 6.7,
+        overview: "This is a wider card with supporting text below as a natural lead-in to additional content.",
+        imageURL: "https://image.tmdb.org/t/p/w220_and_h330_face/TnOeov4w0sTtV2gqICqIxVi74V.jpg"
+      },
+
+      {
+        id: 6,
+        name: "Superman",
+        rating: 7.6,
+        overview: "This is a wider card with supporting text below as a natural lead-in to additional content.",
+        imageURL: "https://image.tmdb.org/t/p/w220_and_h330_face/6Bbq8qQWpoApLZYWFFAuZ1r2gFw.jpg"
+      }
     ],
+    searchQuery: ""
   };
 
   deleteMovie = (movie) => {
     const newMovieList = this.state.movies.filter(m => m.id !== movie.id)
-
-    // this.setState({
-    //   movies: newMovieList
-    // })
-
     this.setState(state => ({ movies: newMovieList }))
+  }
 
+  searchMovie = (event) => {
+    this.setState({ searchQuery: event.target.value })
   }
 
   render() {
+
+    let filteredMovies = this.state.movies.filter(
+      (movie) => {
+        return movie.name.toLowerCase().indexOf(this.state.searchQuery.toLowerCase()) !== -1;
+      }
+    )
+
     return (
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <SearchBar />
+            <SearchBar
+              searchMovieProp={this.searchMovie} />
           </div>
         </div>
         <MovieList
-          movies={this.state.movies}
+          movies={filteredMovies}
           deleteMovieProp={this.deleteMovie} />
       </div>
     );
