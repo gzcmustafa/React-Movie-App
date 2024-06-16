@@ -1,7 +1,9 @@
 import React from "react";
 import MovieList from "./MovieList";
 import SearchBar from "./SearchBar"
-import axios from "axios"
+import axios from 'axios'
+
+console.log(process.env.REACT_APP_API_KEY);
 
 class App extends React.Component {
   state = {
@@ -18,9 +20,8 @@ class App extends React.Component {
   // }
 
   async componentDidMount() {
-    const response = await axios.get("http://localhost:3002/movies")
-
-    this.setState({ movies: response.data })
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`)
+    this.setState({ movies: response.data.results })
 
   }
 
@@ -60,7 +61,7 @@ class App extends React.Component {
 
     let filteredMovies = this.state.movies.filter(
       (movie) => {
-        return movie.name.toLowerCase().indexOf(this.state.searchQuery.toLowerCase()) !== -1;
+        return movie.title.toLowerCase().indexOf(this.state.searchQuery.toLowerCase()) !== -1;
       }
     )
 
