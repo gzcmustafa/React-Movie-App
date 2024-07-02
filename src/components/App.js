@@ -2,6 +2,7 @@ import React from "react";
 import MovieList from "./MovieList";
 import SearchBar from "./SearchBar"
 import axios from 'axios'
+import AddMovie from "./AddMovie";
 
 console.log(process.env.REACT_APP_API_KEY);
 
@@ -20,8 +21,9 @@ class App extends React.Component {
   // }
 
   async componentDidMount() {
-    const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`)
-    this.setState({ movies: response.data.results })
+    const response = await axios.get("http://localhost:3002/movies")
+    console.log(response)
+    this.setState({ movies: response.data })
 
   }
 
@@ -45,7 +47,7 @@ class App extends React.Component {
 
   deleteMovie = async (movie) => {
 
-    axios.delete(`http://localhost:3002/movies/${movie.id}`)    
+    axios.delete(`http://localhost:3002/movies/${movie.id}`)
 
     const newMovieList = this.state.movies.filter(m => m.id !== movie.id)
     this.setState(state => ({ movies: newMovieList }))
@@ -61,7 +63,7 @@ class App extends React.Component {
 
     let filteredMovies = this.state.movies.filter(
       (movie) => {
-        return movie.title.toLowerCase().indexOf(this.state.searchQuery.toLowerCase()) !== -1;
+        return movie.name.toLowerCase().indexOf(this.state.searchQuery.toLowerCase()) !== -1;
       }
     )
 
@@ -76,6 +78,7 @@ class App extends React.Component {
         <MovieList
           movies={filteredMovies}
           deleteMovieProp={this.deleteMovie} />
+        <AddMovie />
       </div>
     );
   }
