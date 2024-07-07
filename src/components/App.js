@@ -3,8 +3,7 @@ import MovieList from "./MovieList";
 import SearchBar from "./SearchBar"
 import axios from 'axios'
 import AddMovie from "./AddMovie";
-
-console.log(process.env.REACT_APP_API_KEY);
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 class App extends React.Component {
   state = {
@@ -68,18 +67,40 @@ class App extends React.Component {
     )
 
     return (
+
+      <BrowserRouter>
+
       <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <SearchBar
-              searchMovieProp={this.searchMovie} />
-          </div>
-        </div>
-        <MovieList
-          movies={filteredMovies}
-          deleteMovieProp={this.deleteMovie} />
-        <AddMovie />
+
+
+          <Routes>
+            <Route exact path="/" element={
+              <React.Fragment>
+                <div className="row">
+                  <div className="col-lg-12">
+                    <SearchBar
+                      searchMovieProp={this.searchMovie} />
+                  </div>
+                </div>
+                <MovieList
+                  movies={filteredMovies}
+                  deleteMovieProp={this.deleteMovie} />
+              </React.Fragment>
+            } >
+            </Route>
+
+
+            <Route path="/add" element={<AddMovie />} />
+
+
+
+
+          </Routes>
+
       </div>
+
+
+      </BrowserRouter>
     );
   }
 }
