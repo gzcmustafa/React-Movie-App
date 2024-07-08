@@ -1,12 +1,17 @@
 import React from 'react'
 
 class AddMovie extends React.Component {
+
+    handleFormSubmit = (e) => {
+        e.preventDefault()
+    }
+
     render() {
         return (
 
             <div className="container">
                 <h2>Add Movie</h2>
-                <form className="mt-5">
+                <form className="mt-5" onSubmit={this.handleFormSubmit}>
                     <input className="form-control" id="disabledInput" type="text" placeholder="Fill The Form To Add A Movie.." disabled />
                     <div className="form-row">
                         <div className="form-group col-md-10">

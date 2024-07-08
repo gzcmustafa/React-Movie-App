@@ -90,7 +90,7 @@ class App extends React.Component {
             </Route>
 
 
-            <Route path="/add" element={<AddMovie />} />
+            <Route path="add" element={<AddMovie />} />
 
 
 
