@@ -42,8 +42,9 @@ class App extends React.Component {
   //   this.setState(state => ({ movies: newMovieList }))
   // }
 
-  //axios api
 
+
+  //DELETE MOVIE
   deleteMovie = async (movie) => {
 
     axios.delete(`http://localhost:3002/movies/${movie.id}`)
@@ -53,10 +54,21 @@ class App extends React.Component {
   }
 
 
-
+  //SEARCH MOVIE
   searchMovie = (event) => {
     this.setState({ searchQuery: event.target.value })
   }
+
+  //ADD MOVIE
+  addMovie = async (movie) => {
+    await axios.post(`http://localhost:3002/movies/`, movie)
+    this.setState(state => ({
+      movies: state.movies.concat([movie])
+    }))
+  }
+
+
+
 
   render() {
 
@@ -74,6 +86,7 @@ class App extends React.Component {
 
 
           <Routes>
+
             <Route exact path="/" element={
               <React.Fragment>
                 <div className="row">
@@ -90,7 +103,11 @@ class App extends React.Component {
             </Route>
 
 
-            <Route path="add" element={<AddMovie />} />
+            <Route path="add" element={
+
+              <AddMovie
+                onAddMovie={(movie) => this.addMovie(movie)} />}>
+            </Route>
 
 
 
