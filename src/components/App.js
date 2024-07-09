@@ -5,6 +5,7 @@ import axios from 'axios'
 import AddMovie from "./AddMovie";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 class App extends React.Component {
   state = {
     movies: [],
@@ -107,6 +108,7 @@ class App extends React.Component {
 
               <AddMovie
                 onAddMovie={(movie) => this.addMovie(movie)} />}>
+
             </Route>
 
 
