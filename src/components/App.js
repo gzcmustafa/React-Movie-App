@@ -77,7 +77,9 @@ class App extends React.Component {
       (movie) => {
         return movie.name.toLowerCase().indexOf(this.state.searchQuery.toLowerCase()) !== -1;
       }
-    )
+    ).sort((a, b) => {
+      return a.id < b.id ? 1 : a.id > b.id ? -1 : 0;
+    })
 
     return (
 
