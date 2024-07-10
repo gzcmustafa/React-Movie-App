@@ -3,15 +3,15 @@
     {
       "id": "1",
       "name": "Interstellar",
-      "rating": 7.9,
-      "overview": "This is a wider card with supporting text below as a natural lead-in to additional content",
+      "rating": 8.4,
+      "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
       "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
     },
     {
       "id": "2",
       "name": "Suits",
-      "rating": 8.4,
-      "overview": "This is a wider card with supporting text below as a natural lead-in to additional content",
+      "rating": 8.2,
+      "overview": "While running from a drug deal gone bad, Mike Ross, a brilliant young college-dropout, slips into a job interview with one of New York City's best legal closers, Harvey Specter. Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after he recognizes his raw talent and photographic memory.",
       "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vQiryp6LioFxQThywxbC6TuoDjy.jpg"
     },
     {
@@ -26,7 +26,7 @@
       "name": "The Lord of the Rings: The Return of the King",
       "rating": "8.9",
       "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
-      "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​"
+      "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power​"
     },
     {
       "id": "42b1",
