@@ -4,6 +4,7 @@ import SearchBar from "./SearchBar"
 import axios from 'axios'
 import AddMovie from "./AddMovie";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WelcomeBar from "./WelcomeBar";
 
 
 class App extends React.Component {
@@ -91,6 +92,12 @@ class App extends React.Component {
           <Routes>
 
             <Route exact path="/" element={
+
+              <WelcomeBar />
+            } >
+            </Route>
+
+            <Route exact path="main" element={
               <React.Fragment>
                 <div className="row">
                   <div className="col-lg-12">
@@ -102,6 +109,7 @@ class App extends React.Component {
                   movies={filteredMovies}
                   deleteMovieProp={this.deleteMovie} />
               </React.Fragment>
+
             } >
             </Route>
 
