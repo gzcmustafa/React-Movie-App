@@ -5,6 +5,7 @@ import axios from 'axios'
 import AddMovie from "./AddMovie";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WelcomeBar from "./WelcomeBar";
+import EditMovie from "./EditMovie";
 
 
 class App extends React.Component {
@@ -120,6 +121,9 @@ class App extends React.Component {
                 onAddMovie={(movie) => this.addMovie(movie)} />}>
 
             </Route>
+
+
+            <Route path="main/edit/:id" element={<EditMovie />}></Route>
 
 
 

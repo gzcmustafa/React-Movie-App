@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 const MovieList = (props) => {
 
@@ -25,6 +26,9 @@ const MovieList = (props) => {
                                         className="btn btn-md btn-outline-danger"
                                         onClick={(event) => props.deleteMovieProp(movie)}
                                     >Delete</button>
+
+                                    <Link type="button" className="btn btn-md btn-outline-primary btn-edit" to={`edit/${movie.id}`} style={{ position: 'relative', right: '55px' }}>Edit</Link>
+
                                     <h2><span className="badge text-bg-warning">{movie.rating}</span></h2>
 
                                 </div>

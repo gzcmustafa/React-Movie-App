@@ -6,7 +6,7 @@ class SearchBar extends React.Component {
 
 
 
-  handleFormSumbit = (event) => {
+  handleFormSubmit = (event) => {
     event.preventDefault();
   }
 
@@ -15,7 +15,7 @@ class SearchBar extends React.Component {
     return (
 
 
-      <form onSubmit={this.handleFormSumbit}>
+      <form onSubmit={this.handleFormSubmit}>
         <div className="form-row mb-5" style={{ display: 'flex', alignItems: 'center' }}>
           <div className="col-10" style={{ flex: 1 }}>
             <input
