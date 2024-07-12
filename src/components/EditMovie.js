@@ -1,5 +1,5 @@
 import React from "react";
-// import axios from 'axios';
+import axios from 'axios';
 
 
 class EditMovie extends React.Component {
@@ -14,8 +14,20 @@ class EditMovie extends React.Component {
 
 
     async componentDidMount() {
+        const id = window.location.pathname.replace("/main/edit/", "");
+        const response = await axios.get(`http://localhost:3002/movies/${id}`);
+        const movie = response.data;
+        console.log(movie)
 
-        // const id = this.props.match.params.id;
+        this.setState({
+            name: movie.name,
+            rating: movie.rating,
+            overview: movie.overview,
+            imageURL: movie.imageURL
+        })
+
+
+
 
     }
 
@@ -40,14 +52,16 @@ class EditMovie extends React.Component {
                             <label htmlFor="inputName">Name</label>
                             <input type="text"
                                 className="form-control"
-                                name="name" />
+                                name="name"
+                                value={this.state.name} />
                         </div>
                         <div className="form-group col-md-2">
                             <label htmlFor="inputRating">Rating</label>
                             <input
                                 type="text"
                                 className="form-control"
-                                name="rating" />
+                                name="rating"
+                                value={this.state.rating} />
                         </div>
                     </div>
                     <div className="form-row">
@@ -56,7 +70,8 @@ class EditMovie extends React.Component {
                             <input
                                 type="text"
                                 className="form-control"
-                                name="imageURL" />
+                                name="imageURL"
+                                value={this.state.imageURL} />
                         </div>
                     </div>
                     <div className="form-row">
@@ -64,7 +79,8 @@ class EditMovie extends React.Component {
                             <label htmlFor="overviewTextarea">Overview</label>
                             <textarea
                                 className="form-control"
-                                name="overview" rows="5"></textarea>
+                                name="overview" rows="5"
+                                value={this.state.overview}></textarea>
                         </div>
                     </div>
                     <input type="submit" className="btn btn-danger btn-block" value="Add Movie" />
