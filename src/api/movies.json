@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Interstellar",
-      "rating": 8.4,
+      "rating": "8.5",
       "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
       "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
     },
@@ -29,18 +29,25 @@
       "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious."
     },
     {
-      "id": "fb32",
-      "name": "The Intouchables ",
-      "rating": "7.9",
-      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1QU7HKgsQbGpzsJbJK4pAVQV9F5.jpg",
-      "overview": "A true story of two men who should never have met – a quadriplegic aristocrat who was injured in a paragliding accident and a young man from the projects."
-    },
-    {
       "id": "9203",
-      "name": "Gladiator",
+      "name": "TEST Gladiator",
       "rating": "7.5",
       "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
       "overview": "In the year 180, the death of emperor Marcus Aurelius throws the Roman Empire into chaos. Maximus is one of the Roman army's most capable and trusted generals and a key advisor to the emperor. As Marcus' devious son Commodus ascends to the throne, Maximus is set to be executed. He escapes, but is captured by slave traders. Renamed Spaniard and forced to become a gladiator, Maximus must battle to the death with other men for the amusement of paying audiences."
+    },
+    {
+      "id": "b734",
+      "name": "The Lord of the Rings: The Return of the King",
+      "rating": "8.7",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+      "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​"
+    },
+    {
+      "id": "98f2",
+      "name": "Forrest Gump",
+      "rating": "8.5",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+      "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him."
     }
   ]
 }
