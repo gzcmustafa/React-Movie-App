@@ -1,6 +1,8 @@
 import React from 'react'
 import serialize from 'form-serialize'
 import { useNavigate } from 'react-router-dom'
+import "./../css/AddMovie.css";
+
 
 
 
@@ -21,7 +23,7 @@ const AddMovie = (props) => {
         return (
 
             <div className="container">
-                <h2>Add Movie</h2>
+                <h2 style={{ color: "green  ", fontSize: "50px" }} className=''>Add Movie</h2>
                 <form className="mt-5" onSubmit={handleFormSubmit}>
                     <input className="form-control" id="disabledInput" type="text" placeholder="Fill The Form To Add A Movie.." disabled />
                     <div className="form-row">
@@ -56,7 +58,7 @@ const AddMovie = (props) => {
                                 name="overview" rows="5"></textarea>
                         </div>
                     </div>
-                    <input type="submit" className="btn btn-danger btn-block" value="Add Movie" />
+                    <input style={{ position: "relative", top: "20px" }} type="submit" className="btn btn-success btn-block" value="Add Movie" />
                 </form>
             </div>
 

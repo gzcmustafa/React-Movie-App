@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
+import "./../css/EditMovie.css";
 
 const EditMovie = ({ onEditMovie }) => {
     const { id } = useParams();
@@ -37,7 +38,7 @@ const EditMovie = ({ onEditMovie }) => {
 
     return (
         <div className="container">
-            <h2>Edit Movie</h2>
+            <h2 style={{ color: "blue  ", fontSize: "50px" }}>Edit Movie</h2>
             <form className="mt-5" onSubmit={handleFormSubmit}>
                 <input className="form-control" id="disabledInput" type="text" placeholder="Edit the form to edit a movie.." disabled />
                 <div className="form-row">
@@ -80,7 +81,7 @@ const EditMovie = ({ onEditMovie }) => {
                             onChange={onInputChange}></textarea>
                     </div>
                 </div>
-                <input type="submit" className="btn btn-danger btn-block" value="Edit Movie" />
+                <input style={{ position: "relative", top: "20px" }} type="submit" className="btn btn-primary btn-block" value="Edit Movie" />
             </form>
         </div>
     );

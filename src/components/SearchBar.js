@@ -15,7 +15,7 @@ class SearchBar extends React.Component {
     return (
 
 
-      <form onSubmit={this.handleFormSubmit}>
+      <form style={{ position: "relative", top: "10px" }} onSubmit={this.handleFormSubmit}>
         <div className="form-row mb-5" style={{ display: 'flex', alignItems: 'center' }}>
           <div className="col-10" style={{ flex: 1 }}>
             <input
@@ -27,10 +27,11 @@ class SearchBar extends React.Component {
           </div>
           <div className="col-2" style={{ flex: '0 0 auto' }}>
             <Link
+
               to="/add"
               type="button"
-              className="btn btn-md btn-danger"
-              style={{ marginLeft: '10px' }}
+              className="btn btn-md btn-success"
+              style={{ marginLeft: '10px', width: "200px" }}
             >
               Add Movie
             </Link>
