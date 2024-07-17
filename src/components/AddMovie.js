@@ -13,7 +13,7 @@ const AddMovie = (props) => {
         e.preventDefault();
         const newMovie = serialize(e.target, { hash: true });
         props.onAddMovie(newMovie);
-        navigate('/');
+        navigate('/main');
     }
 
     const navigate = useNavigate();

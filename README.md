@@ -4,7 +4,7 @@ With this application, you can create your own movie list. You can add movies, d
 
 ### Preview
 
-![Film Uygulaması Görseli](src/images/background-2.jpg)
+![Film Uygulaması Görseli](src/images/movie-app.gif)
 
 ## Features
 

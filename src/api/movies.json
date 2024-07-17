@@ -15,18 +15,67 @@
       "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker."
     },
     {
-      "id": "9203",
-      "name": "TEST Gladiator",
-      "rating": "7.5",
-      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
-      "overview": "In the year 180, the death of emperor Marcus Aurelius throws the Roman Empire into chaos. Maximus is one of the Roman army's most capable and trusted generals and a key advisor to the emperor. As Marcus' devious son Commodus ascends to the throne, Maximus is set to be executed. He escapes, but is captured by slave traders. Renamed Spaniard and forced to become a gladiator, Maximus must battle to the death with other men for the amusement of paying audiences."
+      "id": "6e25",
+      "name": "The Green Mile",
+      "rating": "8.5",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+      "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution."
     },
     {
-      "id": "98f2",
-      "name": "Forrest Gump",
+      "id": "875e",
+      "name": "Inception",
+      "rating": "8.4",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+      "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious."
+    },
+    {
+      "id": "282a",
+      "name": "The Intouchables",
+      "rating": "8.3",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1QU7HKgsQbGpzsJbJK4pAVQV9F5.jpg",
+      "overview": "A true story of two men who should never have met – a quadriplegic aristocrat who was injured in a paragliding accident and a young man from the projects."
+    },
+    {
+      "id": "88b0",
+      "name": "The Matrix",
+      "rating": "8.2",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth."
+    },
+    {
+      "id": "244d",
+      "name": "The Lord of the Rings: The Return of the King",
       "rating": "8.5",
-      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
-      "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him."
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+      "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​"
+    },
+    {
+      "id": "0468",
+      "name": "The Lord of the Rings: The Fellowship of the Ring ",
+      "rating": "8.4",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+      "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed."
+    },
+    {
+      "id": "1731",
+      "name": "The Lord of the Rings: The Two Towers",
+      "rating": "8.4",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+      "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard."
+    },
+    {
+      "id": "0acc",
+      "name": "Top Gun: Maverick",
+      "rating": "8.2",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+      "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen."
+    },
+    {
+      "id": "43d4",
+      "name": "Doctor Who: The Day of the Doctor ",
+      "rating": "8.2",
+      "imageURL": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/yxLra5R61s5J4M5L3mqOY42K5md.jpg",
+      "overview": "In 2013, something terrible is awakening in London's National Gallery; in 1562, a murderous plot is afoot in Elizabethan England; and somewhere in space an ancient battle reaches its devastating conclusion. All of reality is at stake as the Doctor's own dangerous past comes back to haunt him."
     }
   ]
 }
